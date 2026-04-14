@@ -1,0 +1,38 @@
+/*******
+COLOR CHEAT SHEET
+#EDE0D4- almond cream
+
+#E6CCB2- pale oak
+
+#DDB892- tan
+
+#B08968- faded copper
+
+#7F5539- coffee bean
+
+#9C6644- toffee brown
+
+*****/
+
+body, p, div {
+    font-family: "Poiret One", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Pompiere", sans-serif;
+}
+  
+
+/***** COLORS ******/
+
+.divider.divider-primary.divider-small hr {
+    background: #7F5539;
+}   
+
+.btn-primary {
+    --hover: var(--primary--200);
+    background-color: var#7F5539
+(--primary);
+    border-color: var(--primary) var(--primary) var(--primary-300);
+    color: var(--primary-inverse);
+}
