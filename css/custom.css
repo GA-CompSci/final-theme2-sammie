@@ -29,10 +29,5 @@ h1, h2, h3, h4, h5, h6 {
     background: #7F5539;
 }   
 
-.btn-primary {
-    --hover: var(--primary--200);
-    background-color: var#7F5539
-(--primary);
-    border-color: var(--primary) var(--primary) var(--primary-300);
-    color: var(--primary-inverse);
-}
+
+
