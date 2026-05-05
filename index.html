@@ -438,36 +438,81 @@
 								<p class="text-4 line-height-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Our instagram updates:</p>
 							</div>
 						</div>
+<section class="section section-height-4 bg-light border-0 m-0" id="news">
+					<div class="container">
+						<div class="row justify-content-center mb-4">
+							<div class="col-md-9 col-lg-6 text-center">
+							<div class="section-title">
+    <h2>Benefits of Coffee:</h2>
+    <div class="divider"><hr></div>
+    <p>Coffee articles:</p>
+</div>
 
-						<div class="row">
-							<div class="col-lg-4 mb-4 mb-lg-0">
-								<div class="card custom-bg-color-1 border-0">
-									
-								</div>				
-							</div>
-							<div class="col-lg-4 mb-4 mb-lg-0">		
-								<div class="card custom-bg-color-1 border-0">
-									<div class="card-body px-5">
-									
-								</div>
-							</div>
-							<div class="col-lg-4">
-								<div class="card custom-bg-color-1 border-0">
-									
-								</div>
+<div class="blog-section">
+
+    <!-- Article 1 -->
+    <article class="post">
+        <a href="https://www.nkchealth.org/blog/health-benefits-coffee-more-just-morning-pick-me" target="_blank">
+            <img src="images/benefitsofcoffee.header.jpg" alt="Coffee benefits">
+        </a>
+        <div class="post-body">
+            <h2 class="post-title">
+                <a href="https://www.nkchealth.org/blog/health-benefits-coffee-more-just-morning-pick-me" target="_blank">
+                    NKC Health
+                </a>
+            </h2>
+            <div class="post-content">
+                <p>Health Benefits of Coffee: More Than Just a Morning Pick-Me-Up</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Article 2 -->
+    <article class="post">
+        <a href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-reasons-why-the-right-amount-of-coffee-is-good-for-you" target="_blank">
+            <img src="images/coffeesmoothie.jpg" alt="Coffee smoothie">
+        </a>
+        <div class="post-body">
+            <h2 class="post-title">
+                <a href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-reasons-why-the-right-amount-of-coffee-is-good-for-you" target="_blank">
+                    Johns Hopkins Medicine
+                </a>
+            </h2>
+            <div class="post-content">
+                <p>9 Reasons Why (the Right Amount of) Coffee Is Good for You</p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Article 3 -->
+    <article class="post">
+        <a href="https://www.rush.edu/news/health-benefits-coffee" target="_blank">
+            <img src="images/Coffee_WebFeature_0.png" alt="Coffee health">
+        </a>
+        <div class="post-body">
+            <h2 class="post-title">
+                <a href="https://www.rush.edu/news/health-benefits-coffee" target="_blank">
+                    Rush
+                </a>
+            </h2>
+            <div class="post-content">
+                <p>7 ways your favorite pick-me-up might also boost your health</p>
+            </div>
+        </div>
+    </article>
+
+</div>
+								
 							</div>
 						</div>
-
-						<div class="row">
 						
-						</div>
+
 					</div>
 				</section>
 
-				<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-				<div id="locations">
-					<div id="googlemaps" class="google-map m-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300" style="height:600px;"></div>
-				</div>
+				
+
+				
 
 			</div> 
 
@@ -524,7 +569,6 @@ Gilmour</li>
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 		<script>
 
 			/*
@@ -586,110 +630,7 @@ Gilmour</li>
 					zoom: 5
 				};
 
-				var map = $('#googlemaps').gMap(mapSettings),
-					mapRef = $('#googlemaps').data('gMap.reference');
 
-				// Styles from https://snazzymaps.com/
-				var styles = [
-				    {
-				        "featureType": "administrative",
-				        "elementType": "all",
-				        "stylers": [
-				            {
-				                "visibility": "simplified"
-				            }
-				        ]
-				    },
-				    {
-				        "featureType": "landscape",
-				        "elementType": "geometry",
-				        "stylers": [
-				            {
-				                "visibility": "simplified"
-				            },
-				            {
-				                "color": "#F6F3EF"
-				            }
-				        ]
-				    },
-				    {
-				        "featureType": "poi",
-				        "elementType": "geometry",
-				        "stylers": [
-				            {
-				                "visibility": "simplified"
-				            },
-				            {
-				                "color": "#F6F3EF"
-				            }
-				        ]
-				    },
-				    {
-				        "featureType": "road.highway",
-				        "elementType": "geometry",
-				        "stylers": [
-				            {
-				                "visibility": "simplified"
-				            },
-				            {
-				                "color": "#DED3C5"
-				            }
-				        ]
-				    },
-				    {
-				        "featureType": "road.arterial",
-				        "elementType": "geometry",
-				        "stylers": [
-				            {
-				                "visibility": "simplified"
-				            },
-				            {
-				                "color": "#DED3C5"
-				            }
-				        ]
-				    },
-				    {
-				        "featureType": "road.local",
-				        "elementType": "geometry",
-				        "stylers": [
-				            {
-				                "visibility": "simplified"
-				            },
-				            {
-				                "color": "#eeeeee"
-				            }
-				        ]
-				    },
-				    {
-				        "featureType": "water",
-				        "elementType": "geometry",
-				        "stylers": [
-				            {
-				                "visibility": "simplified"
-				            },
-				            {
-				                "color": "#DED3C5"
-				            }
-				        ]
-				    }
-				];
-
-				var styledMap = new google.maps.StyledMapType(styles, {
-					name: 'Styled Map'
-				});
-
-				mapRef.mapTypes.set('map_style', styledMap);
-				mapRef.setMapTypeId('map_style');
-			}
-
-			// Initialize Google Maps when element enter on browser view
-			theme.fn.intObs( '.google-map', 'initializeGoogleMaps()', {} );
-
-			// Map text-center At
-			var mapCenterAt = function(options, e) {
-				e.preventDefault();
-				$('#googlemaps').gMap("centerAt", options);
-			}
 
 		</script>
 
