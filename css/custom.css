@@ -1,63 +1,166 @@
-/*******
-COLOR CHEAT SHEET
-#EDE0D4- almond cream
-
-#E6CCB2- pale oak
-
-#DDB892- tan
-
-#B08968- faded copper
-
-#7F5539- coffee bean
-
-#9C6644- toffee brown
-
-*****/
-
-body, p, div {
-    font-family: "Poiret One", sans-serif;
+/******* GREEN THEME ONLY *******/
+:root {
+    --emerald: #5BBA6F;
+    --light-green: #3FA34D;
+    --forest: #2A9134;
+    --dark-green: #137547;
+    --deep-green: #054A29;
 }
 
+
+/***** REMOVE ALL BROWN FROM TEMPLATE *****/
+.text-color-dark,
+.text-color-default,
+.text-color-body {
+    color: var(--deep-green) !important;
+}
+
+
+.section-title h2,
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Pompiere", sans-serif;
-}
-  
-
-/***** COLORS ******/
-
-.divider.divider-primary.divider-small hr {
-    background: #7F5539;
-}   
-
-.post img {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 15px;
+    color: var(--deep-green) !important;
 }
 
-<style>
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f5f0e6;
-        color: #3e2c23;
-    }
 
-    .section-title {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+/***** BACKGROUNDS *****/
+.bg-light {
+    background: #f6fff8 !important;
+}
 
-    .section-title h2 {
-        font-size: 2.5rem;
-        color: #4b2e2e;
-    }
+.section {
+    background-color: transparent;
+}
 
-    .divider hr {
-        border: 2px solid #8b5e3c;
-        width: 60px;
-        margin: 10px auto;
-    }
 
+/***** NAVBAR *****/
+.header-body {
+    background: var(--deep-green) !important;
+}
+
+.header-nav-main nav > ul > li > a {
+    color: white !important;
+    font-family: "Unkempt", cursive;
+}
+
+.header-nav-main nav > ul > li > a:hover {
+    color: var(--emerald) !important;
+}
+
+
+/***** HERO TEXT *****/
+.text-color-light {
+    color: white !important;
+}
+
+.text-color-primary {
+    color: var(--emerald) !important;
+}
+
+
+/***** BUTTONS *****/
+.btn-primary {
+    background-color: var(--forest) !important;
+    border-color: var(--forest) !important;
+    color: white !important;
+    border-radius: 50px;
+    font-family: "Unkempt", cursive;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green) !important;
+    border-color: var(--dark-green) !important;
+}
+
+.btn-outline {
+    border: 2px solid var(--emerald) !important;
+    color: var(--emerald) !important;
+    background: transparent !important;
+}
+
+.btn-outline:hover {
+    background: var(--emerald) !important;
+    color: white !important;
+}
+
+
+/***** DIVIDERS *****/
+.divider hr {
+    background: var(--emerald) !important;
+    border: none;
+    height: 3px;
+}
+
+
+/***** MENU SECTION (fix hidden browns) *****/
+.custom-menu-item-title h3 {
+    color: var(--forest) !important;
+}
+
+.custom-menu-item-price {
+    color: var(--dark-green) !important;
+}
+
+.custom-menu-item-desc p {
+    color: var(--deep-green) !important;
+}
+
+
+/***** LINKS *****/
+a {
+    color: var(--forest);
+}
+
+a:hover {
+    color: var(--emerald);
+}
+
+
+/***** FOOTER *****/
+#footer {
+    background: var(--deep-green) !important;
+}
+h2.text-color-light.font-weight-extra-bold {
+    font-family: 'Chewy', system-ui;
+    font-weight: normal; /* Chewy only has one weight; this prevents 'fake' bolding */
+    letter-spacing: 1px;  /* Gives the bubbly letters some breathing room */
+}
+h1.text-color-light.font-weight-extra-bold,
+h2.text-color-light.font-weight-extra-bold {
+    font-family: 'Chewy', system-ui;
+    font-weight: normal; /* Keeps the font crisp and prevents "fake" bolding */
+    letter-spacing: 0.5px;
+}
+h2.text-color-primary.font-weight-normal {
+    font-family: 'Unkempt', cursive;
+    font-weight: 400; /* Ensures it uses the standard Unkempt weight */
+}
+h2.text-color-primary.font-weight-normal {
+    font-family: 'Unkempt', cursive;
+    font-weight: 400; /* Uses the standard weight of Unkempt */
+    font-size: 1.2em; /* Optional: Unkempt can run a bit small compared to Chewy */
+}
+span.custom-primary-font {
+    font-family: 'Chewy', system-ui;
+    font-weight: normal;
+}
+/* "Nay's Cafe", "Following the Brew Route!", and "Enjoy the best taste..." */
+h1.text-color-light.font-weight-extra-bold,
+h2.text-color-light.font-weight-extra-bold,
+span.custom-primary-font {
+    font-family: 'Chewy', system-ui;
+    font-weight: normal;
+}
+
+/* "Welcome!" */
+h2.text-color-primary.font-weight-normal {
+    font-family: 'Unkempt', cursive;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, .custom-primary-font {
+    font-family: 'Chewy', system-ui !important;
+    font-weight: normal !important;
+    text-transform: none; 
+}
     .blog-section {
         display: flex;
         justify-content: center;
@@ -90,19 +193,35 @@ h1, h2, h3, h4, h5, h6 {
 
     .post-title a {
         text-decoration: none;
-        color: #6f4e37;
+        color: #2A9134;
         font-weight: bold;
         font-size: 1.2rem;
     }
 
     .post-title a:hover {
-        color: #a67c52;
+        color: #2A9134;
     }
 
     .post-content p {
         font-size: 0.95rem;
         margin-top: 10px;
     }
- 
-</style>
+    @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Unkempt:wght@400;700&display=swap');
+    /* ALL HEADERS: Change to Chewy */
+h1, h2, h3, h4, h5, h6, .text-13 {
+    font-family: 'Chewy', system-ui !important;
+    font-weight: normal !important;
+}
+
+/* ALL SMALLER WRITING: Change to Unkempt */
+body, p, span, li, a, small, strong, div:not(h1, h2, h3, h4, h5, h6) {
+    font-family: 'Unkempt', cursive !important;
+    font-weight: 400 !important;
+}
+
+/* Specific fix for your primary font class */
+.custom-primary-font {
+    font-family: 'Chewy', system-ui !important;
+}
+
 
